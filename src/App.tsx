@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import eagles_logo from "./Philadelphia-Eagles-Logo.png";
 
 function App(): JSX.Element {
     return (
@@ -32,7 +33,7 @@ function App(): JSX.Element {
                     </Col>
                     <Col>
                         <img
-                            src="https://upload.wikimedia.org/wikipedia/en/8/8e/Philadelphia_Eagles_logo.svg"
+                            src={eagles_logo}
                             alt="The Eagles Logo"
                             width="200px"
                             height="150px"
