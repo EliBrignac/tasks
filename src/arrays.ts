@@ -30,7 +30,7 @@ export function tripleNumbers(numbers: number[]): number[] {
  */
 export function stringsToIntegers(numbers: string[]): number[] {
     const helper = [...numbers];
-    const filtered_nums = helper.map((n: string): number => 
+    const filtered_nums = helper.map((n: string): number =>
         !isNaN(+n) ? +n : 0
     );
     return filtered_nums;
