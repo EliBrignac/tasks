@@ -1,3 +1,4 @@
+//import { check } from "prettier";
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
@@ -30,9 +31,8 @@ export function TwoDice(): JSX.Element {
             </span>
             <span data-testid="left-die"> left-die: {d1}</span>
             <span data-testid="right-die"> right-die: {d2}</span>
-            <span>
-                {d1 === d2 ? (d1 === 1 ? "Lose" : "Win") : "Keep Rolling"}
-            </span>
+            <span>{d1 === d2 && d1 === 1 ? "Lose" : ""}</span>
+            <span>{d1 === d2 && d1 !== 1 ? "Win" : ""}</span>
         </>
     );
 }
