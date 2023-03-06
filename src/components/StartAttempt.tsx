@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-import { Question } from "../interfaces/question";
-import { ChangeType } from "./ChangeType";
 
 export function StartAttempt(): JSX.Element {
     const [progress, setProgress] = useState<boolean>(false);
