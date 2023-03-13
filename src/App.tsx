@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import { Button, Col, Container, Row } from "react-bootstrap";
-import eagles_logo from "./Philadelphia-Eagles-Logo.png";
+//import { Button, Col, Container, Row } from "react-bootstrap";
+//import eagles_logo from "./Philadelphia-Eagles-Logo.png";
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { StartAttempt } from "./components/StartAttempt";
@@ -22,6 +22,7 @@ function App(): JSX.Element {
             >
                 UD CISC275 with React Hooks and TypeScript. Hello World
             </header>
+            {/*
             <h1>Eagles will Win the SuperBowl</h1>
             <Container>
                 <Row>
@@ -64,8 +65,7 @@ function App(): JSX.Element {
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload. ELI BRIGNAC
-            </p>
-
+            </p> */}
             <hr></hr>
             {<DoubleHalf></DoubleHalf>}
             <hr></hr>
