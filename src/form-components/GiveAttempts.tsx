@@ -4,7 +4,8 @@ export function GiveAttempts(): JSX.Element {
     const [attempts, setAttempts] = useState<number>(3);
     const [req, setReq] = useState<number>(0);
     function gain(): void {
-        setAttempts(isNaN(req) ? attempts : attempts + req);
+        //setAttempts(isNaN(req) ? attempts : attempts + req);
+        setAttempts(attempts + req);
     }
     function use(): void {
         setAttempts(attempts <= 0 ? 0 : attempts - 1);
